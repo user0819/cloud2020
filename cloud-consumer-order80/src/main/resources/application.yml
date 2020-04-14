@@ -1,2 +1,12 @@
 server:
   port: 80
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://wang:7001/eureka/,http://xiang:7002/eureka/
+spring:
+  application:
+    name: cloud-order-service

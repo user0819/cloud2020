@@ -13,6 +13,8 @@
     <module>cloud-consumer-order80</module>
     <module>cloud-api-common</module>
       <module>cloud-euraka-sever7001</module>
+    <module>cloud-euraka-sever7002</module>
+    <module>cloudproviderpayment8002</module>
   </modules>
 
 

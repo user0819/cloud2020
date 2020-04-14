@@ -13,7 +13,10 @@
 
 
     <dependencies>
-
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+        </dependency>
         <dependency>
             <groupId>com.wang</groupId>
             <artifactId>cloud-api-common</artifactId>
