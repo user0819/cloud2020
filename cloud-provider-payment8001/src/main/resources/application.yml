@@ -24,6 +24,9 @@ eureka:
       defaultZone: http://wang:7001/eureka/,http://xiang:7002/eureka/
     fetch-registry: true
     register-with-eureka: true
+  instance:
+    instance-id: payment8001
+    prefer-ip-address: true
 
 
 

@@ -24,6 +24,13 @@ eureka:
       defaultZone: http://wang:7001/eureka/,http://xiang:7002/eureka/
     fetch-registry: true
     register-with-eureka: true
+ # server:
+  #  enable-self-preservation: false
+   # eviction-interval-timer-in-ms: 2
+
+  instance:
+    instance-id: payment8002
+    prefer-ip-address: true
 
 
 
