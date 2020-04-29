@@ -1,0 +1,31 @@
+server:
+  port: 3366
+
+spring:
+  application:
+    name:  cloud-config-client #注册进Eureka服务器的微服务名 http://127.0.0.1:3344/master/config-test.yml
+  cloud:
+    config:
+      label: master
+      name: config
+      profile: dev
+      uri: http://127.0.0.1:3344
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+
+#服务注册到eureka地址
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+
+# 暴露监控端点
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
